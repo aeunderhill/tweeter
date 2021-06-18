@@ -1,0 +1,25 @@
+#nav-bar {
+  display: flex;  
+  width: 100%;
+  height: 120px; 
+  background-color:#412501;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  position: fixed; 
+  left: 0;
+  top: 0;
+}
+  
+
+#nav-bar .logo {
+  font-family: 'Bungee';
+  color: #ffffff;
+  padding: 1.5em;
+}
+
+#nav-bar .header {
+  color: #ffffff;
+  font-family: 'Source Sans Pro';
+  padding: 1.5em;
+}

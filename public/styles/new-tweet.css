@@ -1,0 +1,55 @@
+.new-tweet {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+#tweet-text {
+  font-weight: 500
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: solid #000;
+  border-top: 5px solid #494949
+}
+
+textarea {
+  background: transparent;
+  color: black;
+  border: 0 none;
+  min-height: fit-content;
+  max-height: 50px;
+  width: 100%;
+  outline: none;
+  word-break: break-word;
+  overflow: auto;
+}
+
+
+.counter {
+  font-family: "Bungee";
+}
+
+.negative-count {
+  color: rgb(126, 12, 12)
+}
+
+button {
+  
+  background-color: rgb(19, 19, 245);
+  color: rgb(167, 164, 164);
+  font-family: "Bungee";
+  border: none;
+  border-radius: 5px; 
+
+}
+
+button:hover {
+  box-shadow: 5px 5px rgb(209, 160, 67)
+}
+  
+

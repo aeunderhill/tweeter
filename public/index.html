@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+
+    <!--The Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!--Adding Icons-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/error.css" type="text/css" />
+
+    <!--Adding the Time-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+
+  </head>
+
+  <body class="workIt">
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <span class="logo"> tweeter! </span> 
+      <span class="header"> <b>Write</b>  a New Tweet!
+        <i class="fa-solid fa-chevrons-down"></i>
+      </span>
+    </nav>
+
+    <header class="head">
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div class="name">
+          <h2>Adam Underhill</h2>
+      </div>
+  </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+
+        <div class="error">
+          <i class="fas fa-exclamation-triangle"></i>
+          <p class="error-box"></p> 
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>  
+    
+        <form id="tweetForm" action="/tweets" method="POST">
+          <label for="tweet-text"><strong>What are you humming about?</strong></label>
+        </div>
+
+          <textarea name="text" id="tweet-text"></textarea>
+    
+          <div class="bottom">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="tweets-container">
+    </section>
+    </main>
+  </body>
+</html>
